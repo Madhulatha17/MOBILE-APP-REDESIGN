@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp UI Redesign</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone">
+
+    <header>
+        <h2>WhatsApp Redesign</h2>
+
+        <input type="text"
+        id="searchBox"
+        placeholder="Search chats..."
+        onkeyup="searchChats()">
+    </header>
+
+    <section class="favorites">
+        <h3>Favorites</h3>
+
+        <div class="favorite-list">
+            <div class="fav">A</div>
+            <div class="fav">B</div>
+            <div class="fav">C</div>
+            <div class="fav">D</div>
+        </div>
+    </section>
+
+    <button class="filter-btn"
+    onclick="showUnread()">
+    Show Unread Only
+    </button>
+
+    <section id="chatList">
+
+        <div class="chat unread">
+            <h4>Alex</h4>
+            <p>Meeting at 5 PM</p>
+        </div>
+
+        <div class="chat">
+            <h4>Sarah</h4>
+            <p>Thank you!</p>
+        </div>
+
+        <div class="chat unread">
+            <h4>John</h4>
+            <p>Please check mail.</p>
+        </div>
+
+        <div class="chat">
+            <h4>Emma</h4>
+            <p>Good Morning</p>
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
